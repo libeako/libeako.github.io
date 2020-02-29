@@ -1,0 +1,133 @@
+p
+{
+	margin: 0.1em;
+	padding: 0.5em;
+	background-color: hsla(21, 0%, 0%, 1);
+}
+
+div.wit-content
+{
+	margin-left: 1.3em;
+	padding-left: 0.9em;
+
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: black;
+
+	border-bottom-style: none;
+	border-top-style: none;
+	border-left-style: solid;
+	border-right-style: none;
+}
+
+body
+{
+	# background-color: hsla(30, 00%, 10%, 1);
+	background-color: hsla(21, 0%, 0%, 1);
+	color: hsla(60, 40%, 50%,1);
+    margin: auto;
+	padding: 1em;
+    max-width: 70em;
+    font-family: sans-serif;
+}
+
+a:link, a:visited
+{
+	color: hsla(240, 0%, 80%, 100%);
+}
+
+.code
+{
+	font-family: monospace;
+	text-transform : none;
+}
+
+.code-block p
+{
+	display: block;
+	white-space: pre;
+	text-transform : none;
+	background-color: hsla(240, 50%, 20%, 1);
+	font-family: monospace;
+	-o-tab-size: 4;
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+.white-space-formatted
+{
+	white-space: pre;
+	font-family: monospace;
+}
+
+:target::before
+{
+    content:"";
+    display: inline-block;
+    width: 100%;
+    border: 0.1em solid orange;
+}
+
+.wit-sentence::before
+{
+	content: " ▸ ";
+}
+
+.wit-sentence::after
+{
+	content: " ◂ ";
+}
+
+#.wit-sentence+.wit-sentence::before
+#{
+#	# content: " ▸ ◂ ";
+#	# content: " ● ";
+#	# content: " ||||| ";
+#	content: " ■ ";
+#	letter-spacing: 0.0em;
+#	opacity: 0.5;
+#}
+
+.wit-nav-item::after
+{
+	content: " → ";
+		# alternatives : ▶
+}
+
+.wit-nav-current-page::after
+{
+	content: "";
+}
+
+.wit-nav-current-page
+{
+	font-size : 2em;
+	font-weight : bolder;
+	display: block;
+	padding-top : 0.5em;
+	text-transform : uppercase;
+}
+
+.wit-navigation-separator
+{
+	margin-top : 1em;
+	margin-bottom : 1em;
+}
+
+
+.wit-page-break, .titled > section > p
+{
+	font-size : 1.2em;
+	font-weight : bolder;
+	text-transform : uppercase;
+}
+
+.wit-page-break, .titled > section > p ::before
+{
+	content = ""
+}
+
+.wit-page-break > ::before { content : "" }
+.wit-page-break > ::after { content : "" }
+.titled > section > p > ::before { content : "" }
+.titled > section > p > ::after { content : "" }

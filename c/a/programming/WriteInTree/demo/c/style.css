@@ -1,0 +1,15 @@
+div.wit-content
+{
+	margin-left: 1.0em;
+	padding-left: 1.0em;
+
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: hsla(240, 0%, 0%, 0.2);
+		
+	border-bottom-style: none;
+    border-top-style: none;
+    border-left-style: solid;
+    border-right-style: none;  
+}
+
