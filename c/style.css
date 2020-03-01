@@ -70,12 +70,7 @@ a:link, a:visited
 
 .wit-sentence::before
 {
-	content: " ▸ ";
-}
-
-.wit-sentence::after
-{
-	content: " ◂ ";
+	content: " ● ";
 }
 
 #.wit-sentence+.wit-sentence::before
@@ -87,6 +82,8 @@ a:link, a:visited
 #	letter-spacing: 0.0em;
 #	opacity: 0.5;
 #}
+
+nav { text-transform : uppercase; }
 
 .wit-nav-item::after
 {
@@ -105,7 +102,6 @@ a:link, a:visited
 	font-weight : bolder;
 	display: block;
 	padding-top : 0.5em;
-	text-transform : uppercase;
 }
 
 .wit-navigation-separator
@@ -118,7 +114,7 @@ a:link, a:visited
 .wit-page-break, .titled > section > p
 {
 	font-size : 1.2em;
-	font-weight : bolder;
+	# font-weight : bolder;
 	text-transform : uppercase;
 }
 
