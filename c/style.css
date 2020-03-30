@@ -118,9 +118,8 @@ nav
 
 .wit-page-break, .titled > section > p
 {
-	font-size : 1.2em;
-	font-weight : bolder;
-	text-transform : uppercase;
+	# font-weight : bolder;
+	# text-transform : uppercase;
 }
 
 .wit-page-break, .titled > section > p ::before
