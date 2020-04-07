@@ -93,7 +93,6 @@ nav
 .wit-nav-item::after
 {
 	content: " → ";
-		# alternatives : ▶
 }
 
 .wit-nav-current-page::after
@@ -116,18 +115,18 @@ nav
 }
 
 
-.wit-page-break, .titled > section > p
+.wit-page-break, .titled > p
 {
 	# font-weight : bolder;
 	# text-transform : uppercase;
 }
 
-.wit-page-break, .titled > section > p ::before
+.wit-page-break, .titled > p ::before
 {
 	content = ""
 }
 
 .wit-page-break > ::before { content : "" }
 .wit-page-break > ::after { content : "" }
-.titled > section > p > ::before { content : "" }
-.titled > section > p > ::after { content : "" }
+.titled > p > ::before { content : "" }
+.titled > p > ::after { content : "" }
