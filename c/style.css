@@ -39,14 +39,14 @@ a:link, a:visited
 .code
 {
 	font-family: monospace;
-	text-transform : none;
+	text-transform: none;
 }
 
 .code-block p
 {
 	display: block;
 	white-space: pre;
-	text-transform : none;
+	text-transform: none;
 	background-color: hsla(240, 50%, 20%, 1);
 	font-family: monospace;
 	-o-tab-size: 4;
@@ -86,8 +86,9 @@ a:link, a:visited
 
 nav
 {
-	text-transform : uppercase;
-	font-weight : bolder;
+	# text-transform: uppercase;
+	text-transform: capitalize;
+	font-weight: bolder;
 }
 
 .wit-nav-item::after
@@ -102,23 +103,23 @@ nav
 
 .wit-nav-current-page
 {
-	font-size : 2em;
-	font-weight : bolder;
+	font-size: 2em;
+	font-weight: bolder;
 	display: block;
-	padding-top : 0.5em;
+	padding-top: 0.5em;
 }
 
 .wit-navigation-separator
 {
-	margin-top : 1em;
-	margin-bottom : 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 
 .wit-page-break, .titled > p
 {
-	# font-weight : bolder;
-	# text-transform : uppercase;
+	# font-weight: bolder;
+	text-transform: capitalize;
 }
 
 .wit-page-break, .titled > p ::before
@@ -126,7 +127,14 @@ nav
 	content = ""
 }
 
-.wit-page-break > ::before { content : "" }
-.wit-page-break > ::after { content : "" }
+.wit-page-break > ::before { content: "" }
+.wit-page-break > ::after { content: "" }
+.titled > p 
+{ 
+	text-transform: capitalize;
+	# font-weight: bold;
+}
 .titled > p > ::before { content : "" }
 .titled > p > ::after { content : "" }
+# .titled > p > ::before { content : "--- " }
+# .titled > p > ::after { content : " ---" }
