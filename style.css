@@ -1,15 +1,25 @@
 body
 {
+	max-width: 64em;
+	
+	/* this should be in 'section', but i can not allow 'navigation' to have different font style, 
+	 * because chdome erroneously automatically gives a bigger size to such font */
+	font-family: monospace, monospace, sans;
+	
 	background: white;
-	color: black; 
+	color: black;
+    margin: auto;
+	padding: 1em;
 }
 
 section > p::before
 {
-	#content: "• ";
-	# ⚫●•
+	/*
 	font-size: 0.7em;
 	align-items: center;
+	content: "• ";
+	⚫●•
+	*/
 }
 
 p
@@ -37,22 +47,16 @@ div.wit-content
 	border-right-style: none;
 }
 
-body
-{
-    margin: auto;
-	padding: 1em;
-    max-width: 46em;
-    font-family: sans-serif,monospace;
-}
-
 nav
 {
+	font-size: 1.26em;
+	/*
 	# text-transform: uppercase;
 	# text-transform: capitalize;
 	# font-weight: bolder;
-	font-size: 1.1em;
 	# border-bottom-style: solid;
 	# margin-bottom: 1em;
+	*/
 }
 
 nav > p
@@ -79,11 +83,13 @@ nav > p
 
 .wit-nav-current-page
 {
-	# font-size: 1.3em;
-	# font-weight: bolder;
-	# display: block;
-	# margin-top: 1em;
-	# margin-bottom: 1em;
+	/*
+	font-size: 1.3em;
+	font-weight: bolder;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	*/
 }
 
 .wit-navigation-separator
@@ -98,6 +104,8 @@ nav > p
 
 .wit-page, .titled > p
 {
-	# font-weight: bolder;
-	# text-transform: capitalize;
+	/*
+	font-weight: bolder;
+	text-transform: capitalize;
+	*/
 }
