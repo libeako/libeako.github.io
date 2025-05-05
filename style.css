@@ -6,7 +6,7 @@ body
 	 * because chdome erroneously automatically gives a bigger size to such font */
 	font-family: monospace, monospace, sans;
 	
-	background: white;
+	background: hsl(50 94% 80%);
 	color: black;
     margin: auto;
 	padding: 1em;
@@ -29,7 +29,8 @@ p
 	padding: 0.4em;
 	border-style: none;
 	border-width: 0.1em;
-	background: hsl(50 80% 90%);
+	background: white;
+		# hsl(50 80% 90%);
 }
 
 div.wit-content
@@ -39,7 +40,7 @@ div.wit-content
 
 	border-style: solid;
 	border-width: 0.1em;
-	border-color: hsl(50 80% 60%);
+	border-color: hsl(50 0% 60%);
 
 	border-bottom-style: none;
 	border-top-style: none;
