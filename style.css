@@ -1,3 +1,18 @@
+@media (prefers-color-scheme: light)
+{
+	:root
+	{
+	  color-scheme: light;
+	}
+}
+@media (prefers-color-scheme: dark)
+{
+	:root
+	{
+	  color-scheme: dark;
+	}
+}
+
 body
 {
 	max-width: 64em;
@@ -5,11 +20,12 @@ body
 	/* this should be in 'section', but i can not allow 'navigation' to have different font style, 
 	 * because chdome erroneously automatically gives a bigger size to such font */
 	font-family: monospace, monospace, sans;
-	
-	background: hsl(50 94% 80%);
-	color: black;
     margin: auto;
 	padding: 1em;
+	@media (prefers-color-scheme: dark)
+	{
+		background-color: black;
+	}
 }
 
 section > p::before
@@ -29,8 +45,6 @@ p
 	padding: 0.4em;
 	border-style: none;
 	border-width: 0.1em;
-	background: white;
-		# hsl(50 80% 90%);
 }
 
 div.wit-content
@@ -100,7 +114,6 @@ nav > p
 	margin-right: 1.2em;
 	margin-top: 1.2em;
 	margin-bottom: 1.2em;
-	color: hsl(50 80% 90%);
 }
 
 .wit-page, .titled > p
